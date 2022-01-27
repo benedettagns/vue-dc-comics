@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <div>
         <div class="navbar">
             
             <img src="../assets/img/buy-comics-digital-comics.png" alt="">
@@ -18,7 +18,7 @@
             <span>dc power visa</span>
         
         </div>
-    </footer>
+    </div>
 </template>
 
 <script>
