@@ -2,8 +2,8 @@
   <div id="app">
     <header-container/>
     <jumbotron-box/>
-    <row-box/>
-    <navbar-container :cards="cards"/>
+    <row-box :cards="cards" />
+    <navbar-container/> 
     <footer-container/>
   </div>
 </template>
