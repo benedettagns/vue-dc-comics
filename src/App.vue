@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <header-container :key="nav" />
+    <header-container/>
     <jumbotron-box/>
     <row-box/>
-    <navbar-container/>
+    <navbar-container :carte="cards"/>
     <footer-container/>
   </div>
 </template>
