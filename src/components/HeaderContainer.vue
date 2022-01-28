@@ -5,23 +5,66 @@
         </div>
 
         <ul>
-            <li>characters</li>
-            <li>comics</li>
-            <li>movies</li>
-            <li>tv</li>
-            <li>games</li>
-            <li>collectibles</li>
-            <li>video</li>
-            <li>fans</li>
-            <li>news</li>
-            <li>shop</li>
+            <li v-for="(element, index) in nav" :key="index">
+                <a :href="element.url"> 
+                    {{element.title}}
+                </a>
+            </li>
         </ul>    
     </header>
 </template>
 
 <script>
 export default {
-    
+
+    data() {
+        return {
+            nav: [
+                {
+                title: 'characters',
+                url: '/character',
+                },
+                {
+                title: 'comics',
+                url: '/comic',
+                },
+                {
+                title: 'movies',
+                url: '/movie',
+                },
+                {
+                title: 'tv',
+                url: '/television',
+                },
+                {
+                title: 'games',
+                url: '/game',
+                },
+                {
+                title: 'collectibles',
+                url: '/collectible',
+                },
+                {
+                title: 'video',
+                url: '/videos',
+                },
+                {
+                title: 'fans',
+                url: '/fan',
+                },
+
+                {
+                title: 'news',
+                url: '/new',
+                },
+
+                {
+                title: 'shop',
+                url: '/shops',
+                },
+            ],
+        }
+    }
 }
 </script>
 
@@ -52,6 +95,11 @@ header{
 
             &:hover {
                 border-bottom: 3px blue solid;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
             }
         }
     }

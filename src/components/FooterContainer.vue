@@ -110,10 +110,11 @@ footer {
             margin: 40px;
 
             button {
-                background-color: grey;
+                background-color: rgb(43, 42, 42);
                 border: blue 3px solid;
                 height: 40px;
                 width: 150px;
+                color: white;
             }
         }
 
@@ -122,7 +123,8 @@ footer {
 
             span {
                 padding-right: 40px;
-                font-size: 20px;
+                font-size: 24px;
+                font-weight: bold;
                 color: blue;  
             }
    
