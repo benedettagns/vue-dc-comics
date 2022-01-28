@@ -3,7 +3,7 @@
     <header-container/>
     <jumbotron-box/>
     <row-box/>
-    <navbar-container :carte="cards"/>
+    <navbar-container :cards="cards"/>
     <footer-container/>
   </div>
 </template>
